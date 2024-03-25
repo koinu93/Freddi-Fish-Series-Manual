@@ -5,11 +5,14 @@ Current check locations are on major obtainable items and story events (typicall
 There are "Goal Items" for each game plando'd into their beat the game locations. Clicking the "Beat the Manual" button requires you to obtain all of them. The currently implemetned ones are:
 - Stolen Treasure
 - Stolen Toys
+- Stolen Conch Shell
 
 You can ignore a lot of the item categories. Most of them exist to help with some logic bits here and there. The currently implemented important ones are:
 - Freddi Fish 1, 
 - Freddi Fish 1 Endgame
 - Freddi Fish 2
+- Freddi Fish 3
+- Freddi Fish 3 Endgame
 - Victory Items
 - Series Games
 
@@ -17,9 +20,12 @@ You can ignore a lot of the item categories. Most of them exist to help with som
 I considered including a second save file for each game, but it's Freddi Fish. If you're using escape to go through animations the game is about 10 seconds long. You can always create your own save file before moving on using the S key in game. Current Points of no return are:
 - Collecting the Sunken Ship Clue in Freddi Fish 1 at the King's Court takes you to the Sunken Ship Endgame location
 - Collecting the final location of a trap piece in Freddi Fish 2 ends the game immediately.
+- Collecting the third golden pipe location in Freddi Fish 3 takes you to the Ancient Ruins Endgame location
 
 ---
 
-**Freddi Fish 1:** You always start with one random sphere 1 item (simulating the PB&J Sandwich grandma gives you) and the first clue bottle that tells you to go to the beach. For the standalone 1 manual, the items in the sunken ship region of the game are plando'd to be vanilla since it was creating unbeatable seeds otherwise with not enough locations. For the full game variation they are shuffled as normal.
+**Freddi Fish 1:** You always start with one random sphere 1 item (simulating the PB&J Sandwich grandma gives you) and the first clue bottle that tells you to go to the beach. For the standalone 1 manual, the items in the sunken ship region of the game are plando'd to be vanilla since it was creating unbeatable seeds otherwise with not enough locations. For the full series variation they are shuffled as normal. The Sunken Ship will never contain pre-endgame progression items for Freddi Fish 1.
 
 **Freddi Fish 2:** The Trident is currently plando'd in it's own location. Because 2 does not have an end game location and just ends abruptly when you collect all the needed trap items. This allows you to control when that game will end due to its sphere 1 nature. If you don't save it for last, just prepare to have to replay to get locations. While you can trigger the cutscene of capturing the ghost by getting these locations, the check "capture the ghost" is not considered done until you do so after receiving all trap pieces through AP.
+
+**Freddi Fish 3:** For the standalone manual the items in the ancient temple are plando'd to be vanilla to allow generating on its own. For full series variation they are shuffled as normal. The Ancient Ruins will never contain pre-endgame progression items for Freddi Fish 3.
